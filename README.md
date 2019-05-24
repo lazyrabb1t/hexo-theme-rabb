@@ -41,7 +41,7 @@ highlight:
   auto_detect: false
   tab_replace:
 ```
-配色可以到https://highlightjs.org/进行选择，选择好之后可以到https://www.bootcdn.cn/highlight.js/找到对应文件进行配置
+配色可以到https://highlightjs.org/ 进行选择，选择好之后可以到 https://www.bootcdn.cn/highlight.js/ 找到对应文件进行配置
 ```
 highlightcss: https://cdn.bootcss.com/highlight.js/9.15.6/styles/a11y-dark.min.css
 ```
