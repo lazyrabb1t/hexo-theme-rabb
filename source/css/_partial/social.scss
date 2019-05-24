@@ -1,0 +1,28 @@
+// ==== social ====
+.footer-social {
+  text-align: center;
+  color: $black;
+  opacity: 0.7;
+  font-size: $footer-social-font;
+}
+.social-link {
+  & + .social-link {
+    margin-left: $footer-social-icon-margin;
+  }
+  .iconfont {
+    font-size: $footer-social-font-size;
+    color: $black;
+  }
+}
+.footer-copyright {
+  .time-line {
+    margin: $footer-social-time-line;
+    .iconfont {
+      font-size: 12px;
+    }
+  }
+  .theme-info {
+    margin: 0;
+    margin-bottom: $footer-social-bottom;
+  }
+}

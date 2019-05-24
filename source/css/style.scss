@@ -1,0 +1,45 @@
+@import "_variables";
+@import "common/_utils";
+@import "_reset";
+
+@import "_partial/_header";
+@import "_partial/mobile";
+@import "_partial/_post";
+@import "_partial/archive";
+@import "_partial/tags";
+@import "_partial/_paginator";
+@import "_partial/copyright";
+@import "_partial/social";
+@import "common/third-part";
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1205446 */
+  src: url('//at.alicdn.com/t/font_1205446_d2q6abm07tw.eot');
+  src: url('//at.alicdn.com/t/font_1205446_d2q6abm07tw.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1205446_d2q6abm07tw.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1205446_d2q6abm07tw.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1205446_d2q6abm07tw.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1205446_d2q6abm07tw.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.icon-github:before { content: "\e600"; }
+
+.icon-next:before { content: "\e615"; }
+
+.icon-prev:before { content: "\e65f"; }
+
+.icon-csdn:before { content: "\e638"; }
+
+.about h1{ font-size: 200px;}
+
+.about a{ font-size: 30px;}

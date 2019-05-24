@@ -1,0 +1,32 @@
+<footer class="footer-social">
+    <% if (config.github_username) { %>
+    <a class="social-link" target="_blank" href="https://github.com/<%= config.github_username %>">
+        <i class="iconfont icon-github"></i>
+    </a>
+    <% } %>
+
+    <% if (config.zhihu_username) { %>
+    <a class="social-link" target="_blank" href="https://www.zhihu.com/people/<%= config.zhihu_username %>">
+        <i class="iconfont icon-zhihu"></i>
+    </a>
+    <% } %>
+
+    <% if (config.weibo_username) { %>
+    <a class="social-link" target="_blank" href="http://weibo.com/<%= config.weibo_username %>">
+        <i class="iconfont icon-weibo"></i>
+    </a>
+    <% } %>
+
+    <div class="footer-copyright">
+        <p class="theme-info">
+            &copy;
+            <% current = date(Date.now(), 'YYYY') %>
+            <% if (config.since && config.since < current) { %>
+                <%- config.since %>&nbsp;-&nbsp;
+            <% } %>
+            <%- current %>&nbsp;
+			<a target="_blank" href="<%- config.url %>"><%- config.author %></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+			powered by <a target="_blank" href="https://hexo.io">hexo</a>&nbsp;&&nbsp;<a target="_blank" href="https://github.com/iJinxin/hexo-theme-sky">sky</a>
+        </p>
+    </div>
+</footer>

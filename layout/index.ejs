@@ -1,0 +1,26 @@
+<section class="archive">
+    <div class="archive-title">
+
+    </div>
+
+
+    <% year = 0 %>
+    <% page.posts.forEach(function(post){ %>
+            <% post.year = date(post.date, 'YYYY') %>
+            <% if (year != post.year) { %>
+                <% year = post.year %>
+                <div class="archive-timeline">
+                    <h2 class="archive-year"><%- year %></h2>
+                </div>
+            <% } %>
+            <div class="archive-post">
+                <span class="archive-post-time">
+                    <%- date(post.date, 'MM-DD')%>
+                </span>
+                <span class="archive-post-title">
+                    <a class="archive-post-link" href="<%= url_for(post.path) %>"><%= post.title %></a>
+                </span>
+            </div>
+    <% })%>
+</section>
+<%- partial('_partial/paginator') %>
