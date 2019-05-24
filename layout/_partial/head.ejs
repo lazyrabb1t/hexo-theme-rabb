@@ -7,5 +7,9 @@
     <%- css('css/style.css') %>
     <%- css('css/gitment.css')%>
 	<link rel="icon" href="<%= config.favicon %>">
+	<% if(config.highlightcss) {%>
+	<link href="<%= config.highlightcss %>" rel="stylesheet">
+	<% } else{ %>
 	<link href="https://cdn.bootcss.com/highlight.js/9.15.6/styles/tomorrow-night-eighties.min.css" rel="stylesheet">
+	<% } %>
 </head>
