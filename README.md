@@ -16,7 +16,9 @@ https://ijinxin.github.io/blog/2018/10/29/hexo-theme-sky%E6%8C%87%E5%8D%97/
 
 ### 使用
 
-下载主题,安装依赖
+hexo的安装可参考http://blog.lazyrabbit.xyz/2019/05/25/hexo%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE/
+
+hexo安装完成后，下载主题并安装依赖
 ```
 git clone https://github.com/guoxwOvO/hexo-theme-rabb themes/rabb
 npm install
