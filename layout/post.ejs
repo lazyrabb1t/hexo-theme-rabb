@@ -4,7 +4,7 @@
             <h2 class="title"><%= page.title %></h2>
             <div class="post-meta">
                 <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
-                <% if (page.categories.length){ %>
+                <% if (page.categories && page.categories.length){ %>
                 <span class="post-category">
                     <% page.categories.forEach(function (category) { %>
                     <a class="category" href="<%= url_for(category.path) %>"><%= category.name %></a>
