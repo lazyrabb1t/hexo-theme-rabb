@@ -3,3 +3,10 @@ menu:
   Home: /
   Tags: /tags
   About: /about
+# setting
+rabb:
+  favicon: http://lazyrabbit.xyz/img/carrot03.png
+  # 样式以及是否开启行号
+  highlight:
+    css: https://cdn.bootcss.com/highlight.js/9.15.6/styles/a11y-dark.min.css
+    num: false
