@@ -30,6 +30,8 @@ npm install hexo-renderer-scss --save
 
 ```
 npm install --save hexo-helper-live2d
+# 这里是你的live2d模型，可以根据个人喜好来选择
+npm instal live2d-widget-model-hijiki
 ```
 
 修改_config.yml
