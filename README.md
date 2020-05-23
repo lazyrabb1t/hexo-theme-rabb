@@ -21,7 +21,7 @@ hexo的安装可参考http://blog.lazyrabbit.xyz/2019/05/25/hexo%E7%9A%84%E5%AE%
 hexo安装完成后，下载主题并安装依赖
 
 ```
-git clone https://github.com/guoxwOvO/hexo-theme-rabb themes/rabb
+git clone https://github.com/lazyrabb1t/hexo-theme-rabb.git themes/rabb
 npm install
 npm install hexo-renderer-scss --save
 ```
