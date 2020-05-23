@@ -43,3 +43,12 @@
 .about h1{ font-size: 200px;}
 
 .about a{ font-size: 30px;}
+
+.post-toc .toc-item {
+  list-style: none;
+}
+
+.toc-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
