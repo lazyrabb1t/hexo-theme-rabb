@@ -17,17 +17,37 @@ https://ijinxin.github.io/blog/2018/10/29/hexo-theme-sky%E6%8C%87%E5%8D%97/
 ### 使用
 
 hexo的安装可参考https://blog.lazyrabbit.xyz/tags/#hexo
+
+作者使用的node版本如下
+
+```shell
+[root]# node -v
+v12.16.1
+[root]# npm -v
+6.13.4
+```
+
 hexo安装完成后，下载主题并安装依赖
 
-```
+```shell
 git clone https://github.com/lazyrabb1t/hexo-theme-rabb.git themes/rabb
 npm install
 npm install hexo-renderer-scss --save
 ```
 
+如果```hexo-renderer-sass```安装不成功的话，可以尝试使用cnpm
+
+```shell
+# 参考自：https://github.com/tufu9441/maupassant-hexo/issues/225
+# 目的是改用cnpm来安装软件
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+# 目的是直接改npm为淘宝的npm，也为防止某些依赖直接用npm来安装，导致无法顺利安装完成。
+npm config set registry https://registry.npm.taobao.org
+```
+
 开启live2d
 
-```
+```shell
 npm install --save hexo-helper-live2d
 # 这里是你的live2d模型，可以根据个人喜好来选择
 npm instal live2d-widget-model-hijiki
@@ -35,7 +55,7 @@ npm instal live2d-widget-model-hijiki
 
 修改_config.yml
 
-```
+```yml
 theme: rabb
 highlight:
   enable: false
@@ -64,7 +84,7 @@ live2d:
 
 运行
 
-```
+```shell
 hexo s
 ```
 
