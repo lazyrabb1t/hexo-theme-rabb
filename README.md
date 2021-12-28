@@ -82,6 +82,51 @@ live2d:
     opacity: 0.7
 ```
 
+新建标签页面
+
+```shell
+hexo new page tags
+```
+
+修改标签页面文件
+
+```shell
+vim source/tags/index.md
+```
+
+添加页面布局
+
+```
+---
+title: tags
+date: 2021-12-28 19:42:03
+layout: tags
+---
+```
+
+新建about页面
+
+```shell
+hexo new page about
+```
+
+修改about页面文件
+
+```shell
+vim source/about/index.md
+```
+
+添加页面布局，同时可在页面下直接写html自定义页面内容
+
+```
+---
+title: about
+date: 2021-12-28 19:44:26
+layout: about
+---
+<h1>How are you.</h1>
+```
+
 运行
 
 ```shell
